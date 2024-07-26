@@ -28,3 +28,17 @@ int main()
     cout<<endl;
 
 }
+
+/*
+Output:
+Enter the first number: 25
+Enter the another number: 56
+
+Bitwise operators:
+a & b: 24
+a < b: 57
+a ^ b: 33
+~(a & b): -25
+a >> b: 0
+a << b: 419430400
+*/
