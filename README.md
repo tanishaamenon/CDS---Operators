@@ -6,7 +6,7 @@ To utilize various operators on C++.<br>
 In C++, operators are special symbols that perform operations on operands. They are categorized into various types based on their functionality:<br>
 <br>
 _Arithmetic Operators:_ Used to perform mathematical operations.<br>
-•	+  Addition <br>
+•	+ &#8594; Addition <br>
 •	-  Subtraction <br> 
 •	 Multiplication <br>
 •	/  Division <br>
