@@ -46,7 +46,7 @@ _Bitwise Operators:_ Operate on bits and perform bit-level operations. <br>
 <br>
 **Code:** <br>
 experiment - 3<br>
-#include <iostream><br>
+*#include <iostream><br>
 using namespace std; <br>
 <br>
 int main()<br>
@@ -129,10 +129,10 @@ int main()<br>
     cout<<"!(a < b): "<<ans<<endl;<br>
     cout<<endl;<br>
 <br>
-}<br>
+}<br>*
 <br>
 experiment - 4<br>
-#include <iostream><br>
+*#include <iostream><br>
 using namespace std; <br>
 <br>
 int main()<br>
@@ -161,14 +161,14 @@ int main()<br>
     cout<<"a << b: "<<ans<<endl;<br>
     cout<<endl;<br>
 <br>
-}<br>
+}<br>*
 <br>
 **Outputs:** <br>
-experiment - 3: <br>
+experiment - 3:<br>
 ![exp3pt1 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt1.JPG)
 ![exp3pt2 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt2.JPG)
 <br>
-experiment - 4: <br>
+experiment - 4:<br>
 ![exp4 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp4.JPG)
 <br>
 **Conclusion:** <br>
