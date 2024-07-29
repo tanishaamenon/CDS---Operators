@@ -1,7 +1,7 @@
 # Experiment 3 and 4
 **Aim:** <br>
-- To study and implement Operators in C++.<br>
-- To study and implement C++ Bitwise Operators.<br>
+To study and implement Operators in C++.<br>
+To study and implement C++ Bitwise Operators.<br>
 <br>
 **Theory:** <br>
 In C++, operators are special symbols that perform operations on operands. They are categorized into various types based on their functionality:<br>
