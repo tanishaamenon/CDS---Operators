@@ -1,7 +1,8 @@
 # Experiment 3 and 4
+**Experiment 3** <br>
+<br>
 **Aim:** <br>
 To study and implement Operators in C++.<br>
-To study and implement C++ Bitwise Operators.<br>
 <br>
 **Theory:** <br>
 In C++, operators are special symbols that perform operations on operands. They are categorized into various types based on their functionality:<br>
@@ -36,6 +37,116 @@ _Assignment Operators:_ Used to assign values to variables. <br>
 •	/= &#8594; Divide and assign <br>
 •	%= &#8594; Modulus and assign <br>
 <br>
+**Code:** <br>
+<br>
+
+```
+#include <iostream>
+using namespace std; 
+ 
+int main()
+{ 
+    int a,b,ans; 
+    float ansd; 
+    cout<<"Enter the first number: "; 
+    cin>>a; 
+    cout<<"Enter the another number: "; 
+    cin>>b; 
+    cout<<endl; 
+ 
+    //arithmetic operators 
+    cout<<"Arithmetic operators: "<<endl; 
+    ans = a + b; 
+    cout<<"a + b: "<<ans<<endl; 
+    ans = a - b; 
+    cout<<"a - b: "<<ans<<endl; 
+    ans = a * b; 
+    cout<<"a * b: "<<ans<<endl; 
+    ans = a / b; 
+    cout<<"a / b: "<<ans<<endl; 
+    ans = a % b; 
+    cout<<"a % b: "<<ans<<endl; 
+    ans = a++; 
+    cout<<"a++: "<<ans<<endl; 
+    ans = b--; 
+    cout<<"b--: "<<ans<<endl; 
+    cout<<endl; 
+     
+    //assignment operators 
+    cout<<"Assignment operators: "<<endl; 
+    ans = 0; 
+    cout<<"ans = 0: "<<ans<<endl; 
+    a += b; 
+    cout<<"a += b: "<<a<<endl; 
+    a -= b; 
+    cout<<"a -= b: "<<a<<endl; 
+    a *= b; 
+    cout<<"a *= b: "<<a<<endl; 
+    a /= b; 
+    cout<<"a /= b: "<<a<<endl; 
+    a %= b; 
+    cout<<"a %= b: "<<a<<endl; 
+    a ^= b; 
+    cout<<"a ^= b: "<<a<<endl; 
+    a &= b; 
+    cout<<"a &= b: "<<a<<endl; 
+    a != b; 
+    cout<<"a != b: "<<a<<endl; 
+    a >>= b; 
+    cout<<"a >>= b: "<<a<<endl; 
+    a <<= b; 
+    cout<<"a <<= b: "<<a<<endl; 
+    cout<<endl; 
+ 
+    //comparison operators 
+    cout<<"Comparison operators: "<<endl; 
+    ans = a < b; 
+    cout<<"a < b: "<<ans<<endl; 
+    ans = a <= b; 
+    cout<<"a <= b: "<<ans<<endl; 
+    ans = a > b; 
+    cout<<"a > b: "<<ans<<endl; 
+    ans = a >= b; 
+    cout<<"a >= b: "<<ans<<endl; 
+    ans = a == b; 
+    cout<<"a == b: "<<ans<<endl; 
+    ans = a != b; 
+    cout<<"a != b: "<<ans<<endl; 
+    cout<<endl; 
+ 
+    //logical operators 
+    cout<<"Logical operators: "<<endl; 
+    ans = (a < b) && (a != b); 
+    cout<<"(a < b) && (a != b): "<<ans<<endl; 
+    ans = (a==b) || (b>a); 
+    cout<<"(a==b) || (b>a): "<<ans<<endl; 
+    ans = !(a < b); 
+    cout<<"!(a < b): "<<ans<<endl; 
+    cout<<endl; 
+ 
+}
+ 
+```
+
+**Outputs:**  <br>
+
+![exp3pt1 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt1.JPG) <br>
+![exp3pt2 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt2.JPG) <br>
+<br>
+**Conclusion:** <br>
+&#8594; We learnt different operators in C++. <br>
+&#8594; We learnt the use case of the operators in C++. <br>
+*******
+<br> 
+
+**Experiment 4** <br>
+<br>
+**Aim:** <br>
+To study and implement C++ Bitwise Operators.<br>
+<br>
+**Theory:** <br>
+In C++, operators are special symbols that perform operations on operands. They are categorized into various types based on their functionality:<br>
+<br>
 _Bitwise Operators:_ Operate on bits and perform bit-level operations. <br>
 •	& &#8594; Bitwise AND <br>
 •	| &#8594; Bitwise OR <br>
@@ -45,134 +156,45 @@ _Bitwise Operators:_ Operate on bits and perform bit-level operations. <br>
 •	>> &#8594; Right shift <br>
 <br>
 **Code:** <br>
-experiment - 3<br>
-*#include <iostream><br>
-using namespace std; <br>
-<br>
-int main()<br>
-{<br>
-    int a,b,ans;<br>
-    float ansd;<br>
-    cout<<"Enter the first number: ";<br>
-    cin>>a;<br>
-    cout<<"Enter the another number: ";<br>
-    cin>>b;<br>
-    cout<<endl;<br>
-<br>
-    //arithmetic operators<br>
-    cout<<"Arithmetic operators: "<<endl;<br>
-    ans = a + b;<br>
-    cout<<"a + b: "<<ans<<endl;<br>
-    ans = a - b;<br>
-    cout<<"a - b: "<<ans<<endl;<br>
-    ans = a * b;<br>
-    cout<<"a * b: "<<ans<<endl;<br>
-    ans = a / b;<br>
-    cout<<"a / b: "<<ans<<endl;<br>
-    ans = a % b;<br>
-    cout<<"a % b: "<<ans<<endl;<br>
-    ans = a++;<br>
-    cout<<"a++: "<<ans<<endl;<br>
-    ans = b--;<br>
-    cout<<"b--: "<<ans<<endl;<br>
-    cout<<endl;<br>
-    <br>
-    //assignment operators<br>
-    cout<<"Assignment operators: "<<endl;<br>
-    ans = 0;<br>
-    cout<<"ans = 0: "<<ans<<endl;<br>
-    a += b;<br>
-    cout<<"a += b: "<<a<<endl;<br>
-    a -= b;<br>
-    cout<<"a -= b: "<<a<<endl;<br>
-    a *= b;<br>
-    cout<<"a *= b: "<<a<<endl;<br>
-    a /= b;<br>
-    cout<<"a /= b: "<<a<<endl;<br>
-    a %= b;<br>
-    cout<<"a %= b: "<<a<<endl;<br>
-    a ^= b;<br>
-    cout<<"a ^= b: "<<a<<endl;<br>
-    a &= b;<br>
-    cout<<"a &= b: "<<a<<endl;<br>
-    a != b;<br>
-    cout<<"a != b: "<<a<<endl;<br>
-    a >>= b;<br>
-    cout<<"a >>= b: "<<a<<endl;<br>
-    a <<= b;<br>
-    cout<<"a <<= b: "<<a<<endl;<br>
-    cout<<endl;<br>
-<br>
-    //comparison operators<br>
-    cout<<"Comparison operators: "<<endl;<br>
-    ans = a < b;<br>
-    cout<<"a < b: "<<ans<<endl;<br>
-    ans = a <= b;<br>
-    cout<<"a <= b: "<<ans<<endl;<br>
-    ans = a > b;<br>
-    cout<<"a > b: "<<ans<<endl;<br>
-    ans = a >= b;<br>
-    cout<<"a >= b: "<<ans<<endl;<br>
-    ans = a == b;<br>
-    cout<<"a == b: "<<ans<<endl;<br>
-    ans = a != b;<br>
-    cout<<"a != b: "<<ans<<endl;<br>
-    cout<<endl;<br>
-<br>
-    //logical operators<br>
-    cout<<"Logical operators: "<<endl;<br>
-    ans = (a < b) && (a != b);<br>
-    cout<<"(a < b) && (a != b): "<<ans<<endl;<br>
-    ans = (a==b) || (b>a);<br>
-    cout<<"(a==b) || (b>a): "<<ans<<endl;<br>
-    ans = !(a < b);<br>
-    cout<<"!(a < b): "<<ans<<endl;<br>
-    cout<<endl;<br>
-<br>
-}<br>*
-<br>
-experiment - 4<br>
-*#include <iostream><br>
-using namespace std; <br>
-<br>
-int main()<br>
-{<br>
-    int a,b,ans;<br>
-    float ansd;<br>
-    cout<<"Enter the first number: ";<br>
-    cin>>a;<br>
-    cout<<"Enter the another number: ";<br>
-    cin>>b;<br>
-    cout<<endl;<br>
-<br>
-    //bitwise operators<br>
-    cout<<"Bitwise operators: "<<endl;<br>
-    ans = a & b;<br>
-    cout<<"a & b: "<<ans<<endl;<br>
-    ans = a | b;<br>
-    cout<<"a < b: "<<ans<<endl;<br>
-    ans = a ^ b;<br>
-    cout<<"a ^ b: "<<ans<<endl;<br>
-    ans = ~(a & b);<br>
-    cout<<"~(a & b): "<<ans<<endl;<br>
-    ans = a >> b;<br>
-    cout<<"a >> b: "<<ans<<endl;<br>
-    ans = a << b;<br>
-    cout<<"a << b: "<<ans<<endl;<br>
-    cout<<endl;<br>
-<br>
-}<br>*
-<br>
+
+```
+#include <iostream> 
+using namespace std;  
+ 
+int main() 
+{ 
+    int a,b,ans; 
+    float ansd; 
+    cout<<"Enter the first number: "; 
+    cin>>a; 
+    cout<<"Enter the another number: "; 
+    cin>>b; 
+    cout<<endl; 
+ 
+    //bitwise operators 
+    cout<<"Bitwise operators: "<<endl; 
+    ans = a & b; 
+    cout<<"a & b: "<<ans<<endl; 
+    ans = a | b; 
+    cout<<"a < b: "<<ans<<endl; 
+    ans = a ^ b; 
+    cout<<"a ^ b: "<<ans<<endl; 
+    ans = ~(a & b); 
+    cout<<"~(a & b): "<<ans<<endl; 
+    ans = a >> b; 
+    cout<<"a >> b: "<<ans<<endl; 
+    ans = a << b; 
+    cout<<"a << b: "<<ans<<endl; 
+    cout<<endl; 
+ 
+}
+```
 **Outputs:** <br>
-experiment - 3:<br>
-![exp3pt1 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt1.JPG)
-![exp3pt2 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp3pt2.JPG)
-<br>
-experiment - 4:<br>
 ![exp4 output](https://github.com/tanishaamenon/CDS---Operators/blob/main/exp4.JPG)
 <br>
 **Conclusion:** <br>
-&#8594; We learnt different operators in C++. <br>
-&#8594; We learnt the use case of the operators in C++. <br>
+&#8594; We learnt different bitwise operators in C++. <br>
+&#8594; We learnt the use case of these operators in C++. <br>
 *******
+<br> 
 
